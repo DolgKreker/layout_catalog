@@ -12,12 +12,14 @@
   &__image {
     width: 160px;
     height: 134px;
-    margin: 0 5px 45px;
+    margin: 0 5px;
     transition: 1s;
+    box-sizing: content-box;
 
     &:hover {
-      transform: scale(1.2) translateY(-14px);
-      padding: 5px;
+      transform: scale(1.2) translateY(1px);
+      padding: 15px 0;
+      margin: -15px auto;
       outline: 3px solid $borderProductColor;
     }
   }
@@ -26,7 +28,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
-    margin: 0 0 5px;
+    margin: 45px 0 5px;
   }
 
   &__code {
