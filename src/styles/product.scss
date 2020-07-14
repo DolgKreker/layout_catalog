@@ -17,6 +17,7 @@
 
     &:hover {
       transform: scale(1.2) translateY(-14px);
+      padding: 5px;
       outline: 3px solid $borderProductColor;
     }
   }
