@@ -1,7 +1,7 @@
 $moyoColor: #00acdc;
 $cardWidth: 200px;
-$spaceBetweenCards: 48px;
-$spaceAroundCards: 40px;
+$spaceBetweenCardsRow: 48px;
+$spaceBetweenCardsColumn: 50px;
 $borderProductColor: #f3f3f3;
 
 @mixin smallText {
@@ -45,9 +45,9 @@ a {
 }
 
 .cards {
-  max-width: $cardWidth * 4 + $spaceBetweenCards * 3 + $spaceAroundCards * 2;
+  max-width: $cardWidth * 4 + $spaceBetweenCardsRow * 3;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: #{$spaceBetweenCardsColumn} #{$spaceBetweenCardsRow};
 }
